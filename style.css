@@ -1,0 +1,107 @@
+html {
+    font-family: "ubuntu", "Helvetica Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0F0E0E;
+    animation: animated-gradient2 4s infinite ;
+}
+@keyframes animated-gradient2 {
+    50%{
+        background: #2D4263;
+    }
+}
+.profile-card {
+    text-align: center;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    height: 50%;
+    box-shadow: 0  10px 10px 12px;
+    transition: 2s;
+}
+.profile-card:hover{
+    transform: rotate(360deg);
+}
+
+.card-header {
+    background: #020912;
+    padding: 0;
+    margin: 0;
+    transition: background 2s ;
+    animation: animated-gradient 4s infinite ;
+}
+
+@keyframes animated-gradient {
+    25%{
+        background: #071c35;
+    }
+}
+.pic {
+    display: inline-block;
+    padding: 5px;
+    background: linear-gradient(#EB455F, #FCFFE7, #2B3467);
+    margin: 3%;
+    border-radius: 50%;
+}
+
+.pic img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.name {
+    color: #BAD7E9;
+    font-size: 30px;
+    margin: 2%;
+}
+
+.description {
+    color: #EB455F;
+    font-size: 20px;
+    margin: 2%;
+}
+
+.sm {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.sm a {
+    color: aliceblue;
+    width: 60px;
+}
+
+.sm a:hover {
+    color: #EB455F;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 40px;
+    color: #EB455F;
+    border: 3px solid #EB455F;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: #FCFFE7;
+}
+
+.contact-btn a:hover {
+    color: #EB455F;
+}
